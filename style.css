@@ -1,0 +1,110 @@
+/* Reset and general styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #121212;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header, main, footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 1rem;
+  transition: opacity 0.5s ease;
+}
+
+/* Profile Picture */
+.profile-pic img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+/* Header */
+h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+/* Boxes for content */
+.section-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1000px;
+  margin-top: 2rem;
+}
+
+.box {
+  background: #1f1f1f;
+  padding: 2rem;
+  border-radius: 12px;
+  flex: 1 1 250px;
+  min-width: 250px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+  background: #333;
+}
+
+.box h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* Footer / Social Links */
+footer {
+  margin-top: auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  background: #1f1f1f;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.social-links a img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  filter: invert(100%);
+}
+
+.social-links a:hover {
+  background: #333;
+}
+
+/* Fade-in animation */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
