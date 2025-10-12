@@ -61,14 +61,15 @@ header, main, footer {
   box-shadow: 0 0 25px #cccccc88;
 }
 
-/* Name Gradient with visible glow */
+/* Name Gradient with visible glow (cross-browser) */
 h1 {
   font-size: 3rem;
   margin: 0;
-  background: linear-gradient(90deg, #ffffff 0%, #eeeeee 100%); /* white → light gray */
+  background: linear-gradient(90deg, #ffffff 0%, #dddddd 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: #ffffff; /* fallback */
+  background-clip: text;   /* standard property for Firefox/Edge */
+  color: transparent;       /* fallback */
   text-shadow: 0 0 15px #ffffff55, 0 0 30px #ffffff33; /* visible glow */
 }
 
