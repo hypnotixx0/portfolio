@@ -65,7 +65,7 @@ header, main, footer {
 h1 {
   font-size: 3rem;
   margin: 0;
-  background: linear-gradient(90deg, #ffffff, #aaaaaa);
+  background: linear-gradient(90deg, #ffffff, #dddddd); /* white to light gray */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
