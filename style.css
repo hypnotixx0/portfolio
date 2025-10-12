@@ -61,13 +61,14 @@ header, main, footer {
   box-shadow: 0 0 25px #cccccc88;
 }
 
-/* Name Gradient */
+/* Name Gradient with subtle glow */
 h1 {
   font-size: 3rem;
   margin: 0;
-  background: linear-gradient(90deg, #ffffff, #dddddd); /* white to light gray */
+  background: linear-gradient(90deg, #ffffff, #dddddd); /* white → light gray */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 10px #ffffff33, 0 0 20px #ffffff22; /* subtle glow behind text */
 }
 
 /* Boxes */
